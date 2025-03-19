@@ -1,6 +1,7 @@
 import type {Metadata} from "next";
 import {Outfit} from "next/font/google";
 import "./globals.css";
+import {Toaster} from "@/components/ui/sonner";
 
 const outfit = Outfit({
   subsets: ["latin"],
@@ -23,6 +24,7 @@ export default function RootLayout({
       <body cz-shortcut-listen="true"
         className={`${outfit.className} selection:bg-black selection:text-white antialiased`}
       >
+        <Toaster />
         {children}
       </body>
     </html>
