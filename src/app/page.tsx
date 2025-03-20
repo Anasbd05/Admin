@@ -1,9 +1,11 @@
-import PageAdmin from "./admin/page";
+import ProductPage from "@/app/products/page";
+import Sidebar from "@/constant/Sidebar";
 
 export default function Home() {
   return (
-    <>
-      <PageAdmin />
-    </>
+    <div className="w-full  flex justify-between">
+      <Sidebar />
+      <ProductPage />
+    </div>
   );
 }
